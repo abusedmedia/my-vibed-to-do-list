@@ -10,7 +10,7 @@ const Landing = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              My Vibed To-Do List
+              My Vabbed ToDo List
             </h1>
             <p className="text-xl text-gray-600 mb-8">
               Stay organized and productive with a simple, beautiful task management app
