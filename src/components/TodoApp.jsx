@@ -92,12 +92,12 @@ const TodoApp = () => {
   const totalCount = todos.length
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-500 via-blue-500 to-teal-400 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-red-500 via-rose-500 to-orange-400 py-12 px-4">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 mb-6">
           <div className="flex justify-between items-center mb-6">
-            <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-teal-600 bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
               Vibed To-Do
             </h1>
             <button
@@ -115,11 +115,11 @@ const TodoApp = () => {
               value={newTask}
               onChange={(e) => setNewTask(e.target.value)}
               placeholder="Add a new task..."
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition"
+              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition"
             />
             <button
               type="submit"
-              className="px-8 py-3 bg-gradient-to-r from-purple-600 to-teal-600 text-white rounded-lg font-semibold hover:from-purple-700 hover:to-teal-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="px-8 py-3 bg-gradient-to-r from-red-600 to-orange-600 text-white rounded-lg font-semibold hover:from-red-700 hover:to-orange-700 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Add
             </button>
@@ -131,16 +131,16 @@ const TodoApp = () => {
           <div className="bg-white rounded-2xl shadow-2xl p-6 mb-6">
             <div className="flex justify-between items-center text-gray-700">
               <div className="text-lg font-semibold">
-                <span className="text-purple-600">Progress: </span>
+                <span className="text-red-600">Progress: </span>
                 {completedCount} / {totalCount} completed
               </div>
-              <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-teal-600 bg-clip-text text-transparent">
+              <div className="text-2xl font-bold bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
                 {totalCount > 0 ? Math.round((completedCount / totalCount) * 100) : 0}%
               </div>
             </div>
             <div className="mt-3 w-full bg-gray-200 rounded-full h-3">
               <div
-                className="bg-gradient-to-r from-purple-600 to-teal-600 h-3 rounded-full transition-all duration-500"
+                className="bg-gradient-to-r from-red-600 to-orange-600 h-3 rounded-full transition-all duration-500"
                 style={{ width: `${totalCount > 0 ? (completedCount / totalCount) * 100 : 0}%` }}
               />
             </div>
@@ -164,14 +164,14 @@ const TodoApp = () => {
                   className={`flex items-center gap-3 p-4 rounded-lg border-2 transition-all duration-200 ${
                     todo.completed
                       ? 'bg-green-50 border-green-200'
-                      : 'bg-gray-50 border-gray-200 hover:border-purple-300'
+                      : 'bg-gray-50 border-gray-200 hover:border-red-300'
                   }`}
                 >
                   <input
                     type="checkbox"
                     checked={todo.completed}
                     onChange={() => toggleTodo(todo.id, todo.completed)}
-                    className="w-5 h-5 text-purple-600 rounded focus:ring-purple-500 cursor-pointer"
+                    className="w-5 h-5 text-red-600 rounded focus:ring-red-500 cursor-pointer"
                   />
                   <span
                     className={`flex-1 text-lg ${

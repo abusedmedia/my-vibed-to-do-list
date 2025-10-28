@@ -4,7 +4,7 @@ const Landing = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-teal-50">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-orange-50">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -17,7 +17,7 @@ const Landing = () => {
             </p>
             <button
               onClick={() => navigate('/login')}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+              className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
             >
               Get Started
             </button>
@@ -63,7 +63,7 @@ const Landing = () => {
             </h2>
             <div className="space-y-4">
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold mr-4">
+                <div className="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-semibold mr-4">
                   1
                 </div>
                 <div>
@@ -72,7 +72,7 @@ const Landing = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold mr-4">
+                <div className="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-semibold mr-4">
                   2
                 </div>
                 <div>
@@ -81,7 +81,7 @@ const Landing = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold mr-4">
+                <div className="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-semibold mr-4">
                   3
                 </div>
                 <div>
@@ -98,13 +98,13 @@ const Landing = () => {
             <div className="flex justify-center gap-4">
               <button
                 onClick={() => navigate('/login')}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-200"
+                className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-200"
               >
                 Log In
               </button>
               <button
                 onClick={() => navigate('/signup')}
-                className="bg-white hover:bg-gray-50 text-blue-600 font-semibold px-6 py-2 rounded-lg border-2 border-blue-600 transition-colors duration-200"
+                className="bg-white hover:bg-gray-50 text-red-600 font-semibold px-6 py-2 rounded-lg border-2 border-red-600 transition-colors duration-200"
               >
                 Sign Up
               </button>
