@@ -10,7 +10,7 @@ const Landing = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-orange-600 via-pink-600 to-red-600 bg-clip-text text-transparent mb-6">
-              Message from Designer
+              Message from Developer
             </h1>
             <p className="text-xl text-gray-700 mb-8">
               Stay organized and productive with a simple, beautiful task management app
